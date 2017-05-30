@@ -11,6 +11,7 @@
  *               2014 Max Krummenacher <max.oss.09@gmail.com>
  *               2014 SHiNE CsyFeK <csyfek@users.sourceforge.net>
  *               2014 Andriy Grytsenko <andrej@rep.kiev.ua>
+ *               2017 Paweł Pyrczak <tkr.tkr.pl@gmail.com>
  *
  * This file is a part of LXPanel project.
  *
@@ -927,17 +928,22 @@ menu_constructor(LXPanel *panel, config_setting_t *settings)
 {
     menup *m;
     config_setting_t *s;
-    int iw, ih;
+    int iw, ih, tmp_int, iconset;
 
     m = g_new0(menup, 1);
     g_return_val_if_fail(m != NULL, 0);
 
-    gtk_icon_size_lookup( GTK_ICON_SIZE_MENU, &iw, &ih );
-    m->iconsize = MAX(iw, ih);
-
     m->box = gtk_event_box_new();
     gtk_widget_set_has_window(m->box, FALSE);
     lxpanel_plugin_set_data(m->box, m, menu_destructor);
+
+    iconset = config_setting_lookup_int(settings, "iconsize", &tmp_int);
+    if (iconset && tmp_int > 0) {
+        m->iconsize = MAX(1, tmp_int);
+    } else {
+        gtk_icon_size_lookup( GTK_ICON_SIZE_MENU, &iw, &ih );
+        m->iconsize = MAX(iw, ih);
+    }
 
     /* Save construction pointers */
     m->panel = panel;
@@ -957,6 +963,7 @@ menu_constructor(LXPanel *panel, config_setting_t *settings)
             config_group_set_string(s, "command", "logout");
             config_group_set_string(s, "image", "gnome-logout");
         config_group_set_string(m->settings, "image", DEFAULT_MENU_ICON);
+        config_group_set_int(m->settings, "iconsize", m->iconsize);
     }
 
     if (!read_submenu(m, m->settings, FALSE)) {
@@ -978,8 +985,10 @@ static gboolean apply_config(gpointer user_data)
         lxpanel_button_set_icon(m->img, m->fname, -1);
     }
     config_group_set_string(m->settings, "image", m->fname);
+    config_group_set_int(m->settings, "iconsize", m->iconsize);
     /* config_group_set_int(m->settings, "panelSize", m->match_panel); */
     config_group_set_string(m->settings, "name", m->caption);
+    restart(); /* reload_system_menu not reloading everything, has problems with menu size etc. */
     return FALSE;
 }
 
@@ -988,6 +997,7 @@ static GtkWidget *menu_config(LXPanel *panel, GtkWidget *p)
     menup* menu = lxpanel_plugin_get_data(p);
     return lxpanel_generic_config_dlg(_("Menu"), panel, apply_config, p,
                                       _("Icon"), &menu->fname, CONF_TYPE_FILE_ENTRY,
+                                      _("Change system menu icons size"), &menu->iconsize, CONF_TYPE_INT,
                                       /* _("Use panel size as icon size"), &menu->match_panel, CONF_TYPE_INT, */
                                       /* _("Caption"), &menu->caption, CONF_TYPE_STR, */
                                       NULL);
