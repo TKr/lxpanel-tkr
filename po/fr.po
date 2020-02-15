@@ -182,6 +182,7 @@ msgid "Logout"
 msgstr "Déconnexion"
 
 #: ../src/main.c:323
+#, c-format
 #, c-format, fuzzy
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
 msgstr "lxpanel %s - tableau de bord léger en GTK2+ pour les bureaux UNIX\n"

@@ -2,7 +2,6 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: LxPanel\n"
@@ -174,6 +173,7 @@ msgid "Logout"
 msgstr "Logout"
 
 #: ../src/main.c:323
+#, c-format
 #, c-format, fuzzy
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
 msgstr "lxpanel %s - lightweight GTK2+ panel for Linux & UNIX desktops\n"

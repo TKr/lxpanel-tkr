@@ -1260,6 +1260,7 @@ msgid "Connection Properties"
 msgstr "ਕੁਨੈਕਸ਼ਨ ਵਿਸ਼ੇਸ਼ਤਾ"
 
 #: ../plugins/netstatus/netstatus-dialog.c:123
+#, c-format
 #, c-format, fuzzy
 msgid "Connection Properties: %s"
 msgstr "ਕੁਨੈਕਸ਼ਨ ਵਿਸ਼ੇਸ਼ਤਾ"

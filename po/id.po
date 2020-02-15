@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxpanel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-01 01:38+0200\n"
-"PO-Revision-Date: 2018-02-19 02:52+0000\n"
+"PO-Revision-Date: 2019-05-31 12:25+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: \n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.8\n"
 "X-Pootle-Revision: 0\n"
 "X-Pootle-Path: /id/lxpanel/po/id.po\n"
-"X-POOTLE-MTIME: 1519008728.685182\n"
+"X-POOTLE-MTIME: 1559305529.082786\n"
 
 #: ../src/configurator.c:148
 msgid ""
@@ -174,9 +174,9 @@ msgid "Logout"
 msgstr "Log keluar"
 
 #: ../src/main.c:323
-#, c-format, fuzzy
+#, c-format
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
-msgstr "lxpanel %s - panel GTK2+ ringan untuk desktop UNIX\n"
+msgstr "lxpanel %s - panel GTK+ ringan untuk desktop UNIX\n"
 
 #: ../src/main.c:324
 #, c-format
@@ -337,7 +337,7 @@ msgstr "Nonaktifkan pembesaran bagi ikon tugas kecil"
 
 #: ../data/ui/launchtaskbar.glade.h:15
 msgid "Show task icons smaller than rest of panel icons"
-msgstr ""
+msgstr "Tampilkan ikon tugas yang lebih kecil daripada ikon-ikon panel sisanya"
 
 #: ../data/ui/launchtaskbar.glade.h:16
 msgid "Maximum width of task button"
@@ -655,13 +655,12 @@ msgid "Bar with buttons to launch application"
 msgstr "Batang dengan tombol untuk menjalankan aplikasi"
 
 #: ../plugins/launchtaskbar.c:2463
-#, fuzzy
 msgid ""
 "Taskbar shows all opened windows and allows to iconify them, shade or get "
 "focus"
 msgstr ""
-"Batang tugas menampilkan semua jendela terbuka dan izinkan untuk "
-"mengikonifikasi mereka, bayang atau mendapatkan fokus"
+"Bilah tugas menampilkan semua jendela yang terbuka dan mengizinkan mereka "
+"untuk diikonifikasi, berbayang, atau mendapatkan fokus"
 
 #: ../plugins/launchtaskbar.c:2483
 msgid "Bar with buttons to launch application and/or show all opened windows"
@@ -992,10 +991,9 @@ msgid "CPUFreq frontend"
 msgstr "Frontend CPUFreq"
 
 #: ../plugins/cpufreq/cpufreq.c:402
-#, fuzzy
 msgid "Display CPU frequency and allow one to change governors and frequency"
 msgstr ""
-"Menampilkan frekuensi CPU dan mengijinkan mengubah governor dan frekuensi"
+"Menampilkan frekuensi CPU dan mengizinkan mengubah governor dan frekuensi"
 
 #: ../plugins/volumealsa/volumealsa.c:245
 msgid "ALSA (or pulseaudio) had a problem. Please check the lxpanel logs."
@@ -1027,33 +1025,35 @@ msgstr "Diam"
 
 #. Just to have these translated
 #: ../plugins/volumealsa/volumealsa.c:1313
+#, fuzzy
 msgid "Line"
-msgstr ""
+msgstr "Line"
 
 #: ../plugins/volumealsa/volumealsa.c:1313
+#, fuzzy
 msgid "LineOut"
-msgstr ""
+msgstr "LineOut"
 
 #: ../plugins/volumealsa/volumealsa.c:1313
 msgid "Front"
-msgstr ""
+msgstr "Depan"
 
 #: ../plugins/volumealsa/volumealsa.c:1313
 msgid "Surround"
-msgstr ""
+msgstr "Surround"
 
 #: ../plugins/volumealsa/volumealsa.c:1313
 msgid "Speaker+LO"
-msgstr ""
+msgstr "Speaker+LO"
 
 #: ../plugins/volumealsa/volumealsa.c:1352
 msgid "default"
-msgstr ""
+msgstr "baku"
 
 #. desc, index
 #: ../plugins/volumealsa/volumealsa.c:1412
 msgid "Master"
-msgstr ""
+msgstr "Induk"
 
 #: ../plugins/volumealsa/volumealsa.c:1416
 msgid "PCM"
@@ -1061,7 +1061,7 @@ msgstr "PCM"
 
 #: ../plugins/volumealsa/volumealsa.c:1420
 msgid "Headphone"
-msgstr ""
+msgstr "Headphone"
 
 #: ../plugins/volumealsa/volumealsa.c:1442
 msgid "Click for Volume Slider"
@@ -1073,20 +1073,20 @@ msgstr "Klik untuk Menjungkitkan Bisu"
 
 #: ../plugins/volumealsa/volumealsa.c:1450
 msgid "Click for Open Mixer"
-msgstr ""
+msgstr "Klik untuk Membuka Mikser"
 
 #. setup hotkeys
 #: ../plugins/volumealsa/volumealsa.c:1454
 msgid "Hotkey for Volume Up"
-msgstr ""
+msgstr "Tombol Pintas untuk Volume Naik"
 
 #: ../plugins/volumealsa/volumealsa.c:1456
 msgid "Hotkey for Volume Down"
-msgstr ""
+msgstr "Tombol Pintas untuk Volume Turun"
 
 #: ../plugins/volumealsa/volumealsa.c:1458
 msgid "Hotkey for Volume Mute"
-msgstr ""
+msgstr "Tombol Pintas untuk Volume Hening"
 
 #: ../plugins/volumealsa/volumealsa.c:1514
 #: ../plugins/volumealsa/volumealsa.c:1553
@@ -1096,26 +1096,24 @@ msgstr "Kendali Volume"
 
 #: ../plugins/volumealsa/volumealsa.c:1516
 msgid "Audio Card"
-msgstr ""
+msgstr "Kartu Suara"
 
 #: ../plugins/volumealsa/volumealsa.c:1519
 msgid "Channel to Operate"
-msgstr ""
+msgstr "Kanal yang akan Dioperasikan"
 
 #: ../plugins/volumealsa/volumealsa.c:1527
 msgid "Command to Open Mixer"
-msgstr ""
+msgstr "Perintah untuk Membuka Mikser"
 
 #: ../plugins/volumealsa/volumealsa.c:1542
-#, fuzzy
 msgid "Launch Mixer"
-msgstr "Peluncur"
+msgstr "Luncurkan Mikser"
 
 #: ../plugins/volumealsa/volumealsa.c:1554
 #: ../plugins/volumealsa/volumealsa.c:1575
-#, fuzzy
 msgid "Display and control volume"
-msgstr "Tampilan dan kendali volume bagi ALSA"
+msgstr "Menampilkan dan mengendalikan volume"
 
 #: ../plugins/netstat/netstat.c:183
 msgid "<Hidden Access Point>"
@@ -2025,87 +2023,87 @@ msgstr "Tampilkan kondisi cuaca untuk suatu lokasi."
 
 #: ../plugins/weather/yahooutil.c:51 ../plugins/weather/openweathermap.c:56
 msgid "N"
-msgstr ""
+msgstr "U"
 
 #: ../plugins/weather/yahooutil.c:52 ../plugins/weather/openweathermap.c:57
 msgid "NNE"
-msgstr ""
+msgstr "UTL"
 
 #: ../plugins/weather/yahooutil.c:53 ../plugins/weather/openweathermap.c:58
 msgid "NE"
-msgstr ""
+msgstr "TL"
 
 #: ../plugins/weather/yahooutil.c:54 ../plugins/weather/openweathermap.c:59
 msgid "ENE"
-msgstr ""
+msgstr "TTL"
 
 #: ../plugins/weather/yahooutil.c:55 ../plugins/weather/openweathermap.c:60
 msgid "E"
-msgstr ""
+msgstr "T"
 
 #: ../plugins/weather/yahooutil.c:56 ../plugins/weather/openweathermap.c:61
 msgid "ESE"
-msgstr ""
+msgstr "TTG"
 
 #: ../plugins/weather/yahooutil.c:57 ../plugins/weather/openweathermap.c:62
 msgid "SE"
-msgstr ""
+msgstr "TG"
 
 #: ../plugins/weather/yahooutil.c:58 ../plugins/weather/openweathermap.c:63
 msgid "SSE"
-msgstr ""
+msgstr "STG"
 
 #: ../plugins/weather/yahooutil.c:59 ../plugins/weather/openweathermap.c:64
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #: ../plugins/weather/yahooutil.c:60 ../plugins/weather/openweathermap.c:65
 msgid "SSW"
-msgstr ""
+msgstr "SBD"
 
 #: ../plugins/weather/yahooutil.c:61 ../plugins/weather/openweathermap.c:66
 msgid "SW"
-msgstr ""
+msgstr "BD"
 
 #: ../plugins/weather/yahooutil.c:62 ../plugins/weather/openweathermap.c:67
 msgid "WSW"
-msgstr ""
+msgstr "BBD"
 
 #: ../plugins/weather/yahooutil.c:63 ../plugins/weather/openweathermap.c:68
 msgid "W"
-msgstr ""
+msgstr "B"
 
 #: ../plugins/weather/yahooutil.c:64 ../plugins/weather/openweathermap.c:69
 msgid "WNW"
-msgstr ""
+msgstr "BBL"
 
 #: ../plugins/weather/yahooutil.c:65 ../plugins/weather/openweathermap.c:70
 msgid "NW"
-msgstr ""
+msgstr "BL"
 
 #: ../plugins/weather/yahooutil.c:66 ../plugins/weather/openweathermap.c:71
 msgid "NNW"
-msgstr ""
+msgstr "UBL"
 
 #: ../plugins/weather/yahooutil.c:1086
 msgid "Yahoo! Weather"
-msgstr ""
+msgstr "Yahoo! Cuaca"
 
 #: ../plugins/weather/openweathermap.c:365
 msgid "Mph"
-msgstr ""
+msgstr "Mpj"
 
 #: ../plugins/weather/openweathermap.c:365
 msgid "m/s"
-msgstr ""
+msgstr "m/d"
 
 #: ../plugins/weather/openweathermap.c:535
 msgid "m"
-msgstr ""
+msgstr "m"
 
 #: ../plugins/weather/openweathermap.c:932
 msgid "OpenWeatherMap"
-msgstr ""
+msgstr "OpenWeatherMap"
 
 #~ msgid " --log <number> -- set log level 0-5. 0 - none 5 - chatty\n"
 #~ msgstr " --log <nomor> -- atur level log 0-5. 0 - tak ada 5 - lengkap\n"

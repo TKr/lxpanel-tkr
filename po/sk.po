@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: lxpanel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-01 01:38+0200\n"
-"PO-Revision-Date: 2019-02-23 20:59+0000\n"
+"PO-Revision-Date: 2019-07-11 14:26+0000\n"
 "Last-Translator: mirek <mirek@cnl.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "Language: \n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.8\n"
 "X-Pootle-Revision: 0\n"
 "X-Pootle-Path: /sk/lxpanel/po/sk.po\n"
-"X-POOTLE-MTIME: 1550955553.433579\n"
+"X-POOTLE-MTIME: 1562855206.710180\n"
 
 #: ../src/configurator.c:148
 msgid ""
@@ -174,6 +174,7 @@ msgid "Logout"
 msgstr "Odhlásiť"
 
 #: ../src/main.c:323
+#, c-format
 #, c-format, fuzzy
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
 msgstr "lxpanel %s - odľahčený GTK2+ panel pre unixové pracovné prostredia\n"
@@ -593,7 +594,7 @@ msgstr "<b>Vlastnosti</b>"
 
 #: ../data/ui/panel-pref.glade.h:43
 msgid "Minimize panel when not in use"
-msgstr "Minimalizovať panel, keď sa napoužíva"
+msgstr "Minimalizovať panel, keď sa nepoužíva"
 
 #: ../data/ui/panel-pref.glade.h:44
 msgid "Size when minimized"
@@ -813,7 +814,7 @@ msgstr "Oznamovacia oblasť"
 
 #: ../plugins/xkb/xkb-plugin.c:409
 msgid "New session is required for this option to take effect"
-msgstr ""
+msgstr "Aby sa táto voľba prejavila, je potrebné spustiť novú reláciu."
 
 #. dialog
 #: ../plugins/xkb/xkb-plugin.c:590
@@ -1776,7 +1777,7 @@ msgstr "Menu adresára"
 
 #: ../plugins/indicator/indicator.c:869
 msgid "Session Menu"
-msgstr ""
+msgstr "Ponuka relácie"
 
 #: ../plugins/indicator/indicator.c:870
 #, fuzzy

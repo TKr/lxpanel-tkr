@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: LXPanel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-01 01:38+0200\n"
-"PO-Revision-Date: 2019-02-27 15:14+0000\n"
+"PO-Revision-Date: 2019-07-19 09:03+0000\n"
 "Last-Translator: Davidmp <rbndavid@gmail.com>\n"
 "Language-Team: David Medina <rbndavid@gmail.com>\n"
 "Language: \n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.8\n"
 "X-Pootle-Revision: 0\n"
 "X-Pootle-Path: /ca/lxpanel/po/ca.po\n"
-"X-POOTLE-MTIME: 1551280468.294464\n"
+"X-POOTLE-MTIME: 1563526989.310134\n"
 
 #: ../src/configurator.c:148
 msgid ""
@@ -177,9 +177,9 @@ msgid "Logout"
 msgstr "Surt"
 
 #: ../src/main.c:323
-#, c-format, fuzzy
+#, c-format
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
-msgstr "lxpanel %s - Plafó lleuger en GTK2+ per a escriptoris UNIX\n"
+msgstr "lxpanel %s - Plafó lleuger en GTK+ per a escriptoris UNIX\n"
 
 #: ../src/main.c:324
 #, c-format
@@ -201,7 +201,7 @@ msgstr " --version   -- imprimeix-ne la versió i surt\n"
 #: ../src/main.c:329
 #, c-format
 msgid " --profile name -- use specified profile\n"
-msgstr "  --profile nom -- empra el perfil especificat\n"
+msgstr "  --profile name -- usa el perfil especificat\n"
 
 #: ../src/main.c:331
 #, c-format
@@ -325,7 +325,7 @@ msgstr "Mostra només les finestres a la mateixa pantalla de la barra de tasques
 
 #: ../data/ui/launchtaskbar.glade.h:11
 msgid "Use mouse wheel"
-msgstr "Empra la roda del ratolí"
+msgstr "Usa la roda del ratolí"
 
 #: ../data/ui/launchtaskbar.glade.h:12
 msgid "Flash when there is any window requiring attention"
@@ -660,13 +660,12 @@ msgid "Bar with buttons to launch application"
 msgstr "Barra amb botons per llançar aplicacions"
 
 #: ../plugins/launchtaskbar.c:2463
-#, fuzzy
 msgid ""
 "Taskbar shows all opened windows and allows to iconify them, shade or get "
 "focus"
 msgstr ""
 "La barra de tasques mostra totes les finestres obertes i permet iconificar-"
-"les, plegar-les o obtenir el focus"
+"les, atribuir-los el focus o treure'ls-el"
 
 #: ../plugins/launchtaskbar.c:2483
 msgid "Bar with buttons to launch application and/or show all opened windows"
@@ -742,7 +741,7 @@ msgstr "Codis de format: man 3 strftime; %n per al trencament de línia"
 
 #: ../plugins/dclock.c:438
 msgid "Action when clicked (default: display calendar)"
-msgstr "Acció en fer-hi clic (predeterminada: mostrar el calendari)"
+msgstr "Acció en fer-hi clic (per defecte: mostra el calendari)"
 
 #: ../plugins/dclock.c:440
 msgid "Tooltip only"
@@ -1001,7 +1000,6 @@ msgid "CPUFreq frontend"
 msgstr "Frontal de freq. de CPU"
 
 #: ../plugins/cpufreq/cpufreq.c:402
-#, fuzzy
 msgid "Display CPU frequency and allow one to change governors and frequency"
 msgstr ""
 "Mostra la freqüència de la CPU i permet canviar-ne els governadors i la "
@@ -1823,7 +1821,7 @@ msgstr "Color de la RAM"
 
 #: ../plugins/monitors/monitors.c:738
 msgid "Action when clicked (default: lxtask)"
-msgstr "Acció en fer-hi clic (predeterminada: lxtask)"
+msgstr "Acció en fer-hi clic (per defecte: lxtask)"
 
 #: ../plugins/monitors/monitors.c:822
 msgid "Display monitors (CPU, RAM)"

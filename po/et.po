@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxpanel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-01 01:38+0200\n"
-"PO-Revision-Date: 2017-12-12 16:43+0000\n"
+"PO-Revision-Date: 2019-03-08 13:43+0000\n"
 "Last-Translator: Anari Jalakas <anari.jalakas@gmail.com>\n"
 "Language-Team: Gnome Estonian translation team <gnome-et@linux.ee>\n"
 "Language: \n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.8\n"
 "X-Pootle-Revision: 0\n"
 "X-Pootle-Path: /et/lxpanel/po/et.po\n"
-"X-POOTLE-MTIME: 1513096985.361972\n"
+"X-POOTLE-MTIME: 1552052604.782426\n"
 
 #: ../src/configurator.c:148
 msgid ""
@@ -177,9 +177,9 @@ msgid "Logout"
 msgstr "Väljalogimine"
 
 #: ../src/main.c:323
-#, c-format, fuzzy
+#, c-format
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
-msgstr "lxpanel %s - kergekaaluline GTK2+ paneel UNIX töölaudadele\n"
+msgstr "lxpanel %s - kergekaaluline GTK+ paneel UNIX töölaudadele\n"
 
 #: ../src/main.c:324
 #, c-format
@@ -341,7 +341,7 @@ msgstr "Tööülesannete väikeste ikoonide laiendamine keelatakse"
 
 #: ../data/ui/launchtaskbar.glade.h:15
 msgid "Show task icons smaller than rest of panel icons"
-msgstr ""
+msgstr "Kuva tegumi ikoone paneeli ikoonidest väiksemalt"
 
 #: ../data/ui/launchtaskbar.glade.h:16
 msgid "Maximum width of task button"
@@ -659,13 +659,12 @@ msgid "Bar with buttons to launch application"
 msgstr "Riba rakenduste käivitamise nuppude jaoks"
 
 #: ../plugins/launchtaskbar.c:2463
-#, fuzzy
 msgid ""
 "Taskbar shows all opened windows and allows to iconify them, shade or get "
 "focus"
 msgstr ""
-"Tegumiribal kuvatakse kõiki avatud aknaid, neid saab minimeerida, varjata ja "
-"fokuseerida"
+"Tegumiribal kuvatakse kõik avatud aknad, neid saab minimeerida, liigutada "
+"esi- ja tahaplaanile"
 
 #: ../plugins/launchtaskbar.c:2483
 msgid "Bar with buttons to launch application and/or show all opened windows"
@@ -997,7 +996,6 @@ msgid "CPUFreq frontend"
 msgstr "CPUFreq kasutajaliides"
 
 #: ../plugins/cpufreq/cpufreq.c:402
-#, fuzzy
 msgid "Display CPU frequency and allow one to change governors and frequency"
 msgstr "Protsessori töösageduse kuvamine koos talitluse muutmise võimalusega"
 
@@ -2029,87 +2027,87 @@ msgstr "Asukoha ilmaseisu kuvamine."
 
 #: ../plugins/weather/yahooutil.c:51 ../plugins/weather/openweathermap.c:56
 msgid "N"
-msgstr ""
+msgstr "N"
 
 #: ../plugins/weather/yahooutil.c:52 ../plugins/weather/openweathermap.c:57
 msgid "NNE"
-msgstr ""
+msgstr "NNE"
 
 #: ../plugins/weather/yahooutil.c:53 ../plugins/weather/openweathermap.c:58
 msgid "NE"
-msgstr ""
+msgstr "NE"
 
 #: ../plugins/weather/yahooutil.c:54 ../plugins/weather/openweathermap.c:59
 msgid "ENE"
-msgstr ""
+msgstr "ENE"
 
 #: ../plugins/weather/yahooutil.c:55 ../plugins/weather/openweathermap.c:60
 msgid "E"
-msgstr ""
+msgstr "E"
 
 #: ../plugins/weather/yahooutil.c:56 ../plugins/weather/openweathermap.c:61
 msgid "ESE"
-msgstr ""
+msgstr "ESE"
 
 #: ../plugins/weather/yahooutil.c:57 ../plugins/weather/openweathermap.c:62
 msgid "SE"
-msgstr ""
+msgstr "SE"
 
 #: ../plugins/weather/yahooutil.c:58 ../plugins/weather/openweathermap.c:63
 msgid "SSE"
-msgstr ""
+msgstr "SSE"
 
 #: ../plugins/weather/yahooutil.c:59 ../plugins/weather/openweathermap.c:64
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #: ../plugins/weather/yahooutil.c:60 ../plugins/weather/openweathermap.c:65
 msgid "SSW"
-msgstr ""
+msgstr "SSW"
 
 #: ../plugins/weather/yahooutil.c:61 ../plugins/weather/openweathermap.c:66
 msgid "SW"
-msgstr ""
+msgstr "SW"
 
 #: ../plugins/weather/yahooutil.c:62 ../plugins/weather/openweathermap.c:67
 msgid "WSW"
-msgstr ""
+msgstr "WSW"
 
 #: ../plugins/weather/yahooutil.c:63 ../plugins/weather/openweathermap.c:68
 msgid "W"
-msgstr ""
+msgstr "W"
 
 #: ../plugins/weather/yahooutil.c:64 ../plugins/weather/openweathermap.c:69
 msgid "WNW"
-msgstr ""
+msgstr "WNW"
 
 #: ../plugins/weather/yahooutil.c:65 ../plugins/weather/openweathermap.c:70
 msgid "NW"
-msgstr ""
+msgstr "NW"
 
 #: ../plugins/weather/yahooutil.c:66 ../plugins/weather/openweathermap.c:71
 msgid "NNW"
-msgstr ""
+msgstr "NNW"
 
 #: ../plugins/weather/yahooutil.c:1086
 msgid "Yahoo! Weather"
-msgstr ""
+msgstr "Yahoo! Ilm"
 
 #: ../plugins/weather/openweathermap.c:365
 msgid "Mph"
-msgstr ""
+msgstr "mph"
 
 #: ../plugins/weather/openweathermap.c:365
 msgid "m/s"
-msgstr ""
+msgstr "m/s"
 
 #: ../plugins/weather/openweathermap.c:535
 msgid "m"
-msgstr ""
+msgstr "m"
 
 #: ../plugins/weather/openweathermap.c:932
 msgid "OpenWeatherMap"
-msgstr ""
+msgstr "OpenWeatherMap"
 
 #~ msgid " --log <number> -- set log level 0-5. 0 - none 5 - chatty\n"
 #~ msgstr ""

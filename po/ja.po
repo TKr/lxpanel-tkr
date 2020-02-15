@@ -177,6 +177,7 @@ msgid "Logout"
 msgstr "ログアウト"
 
 #: ../src/main.c:323
+#, c-format
 #, c-format, fuzzy
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
 msgstr "lxpanel %s - UNIX デスクトップのための軽量な GTK2+ パネル\n"

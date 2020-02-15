@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxpanel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-01 01:38+0200\n"
-"PO-Revision-Date: 2017-10-03 08:36+0000\n"
+"PO-Revision-Date: 2019-05-01 14:20+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lietuvių <>\n"
 "Language: \n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Pootle 2.8\n"
 "X-Pootle-Revision: 0\n"
 "X-Pootle-Path: /lt/lxpanel/po/lt.po\n"
-"X-POOTLE-MTIME: 1507019800.579203\n"
+"X-POOTLE-MTIME: 1556720433.328925\n"
 
 #: ../src/configurator.c:148
 msgid ""
@@ -178,10 +178,9 @@ msgid "Logout"
 msgstr "Atsijungti"
 
 #: ../src/main.c:323
-#, c-format, fuzzy
+#, c-format
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
-msgstr ""
-"lxpanel %s - supaprastintas GTK2+ skydelis, skirtas UNIX darbalaukiams\n"
+msgstr "lxpanel %s - supaprastintas GTK+ skydelis, skirtas UNIX darbalaukiams\n"
 
 #: ../src/main.c:324
 #, c-format
@@ -348,7 +347,7 @@ msgstr "Išjungti mažų užduočių piktogramų didinimą"
 
 #: ../data/ui/launchtaskbar.glade.h:15
 msgid "Show task icons smaller than rest of panel icons"
-msgstr ""
+msgstr "Rodyti užduočių piktogramas mažesnes nei kitas skydelio piktogramas"
 
 #: ../data/ui/launchtaskbar.glade.h:16
 msgid "Maximum width of task button"
@@ -666,13 +665,12 @@ msgid "Bar with buttons to launch application"
 msgstr "Juosta su mygtukais, skirtais paleisti programas"
 
 #: ../plugins/launchtaskbar.c:2463
-#, fuzzy
 msgid ""
 "Taskbar shows all opened windows and allows to iconify them, shade or get "
 "focus"
 msgstr ""
 "Užduočių juosta rodo visus atvertus langus ir leidžia juos suskleisti, "
-"užraityti bei fokusuoti"
+"užraityti ar fokusuoti"
 
 #: ../plugins/launchtaskbar.c:2483
 msgid "Bar with buttons to launch application and/or show all opened windows"
@@ -1005,9 +1003,8 @@ msgid "CPUFreq frontend"
 msgstr "CpuFreq grafinė sąsaja"
 
 #: ../plugins/cpufreq/cpufreq.c:402
-#, fuzzy
 msgid "Display CPU frequency and allow one to change governors and frequency"
-msgstr "Rodo procesoriaus dažnį ir leidžia keisti reguliatorius ir dažnį"
+msgstr "Rodyti procesoriaus dažnį ir leidžia keisti reguliatorius ir dažnį"
 
 #: ../plugins/volumealsa/volumealsa.c:245
 msgid "ALSA (or pulseaudio) had a problem. Please check the lxpanel logs."
@@ -2041,87 +2038,87 @@ msgstr "Rodyti vietos orų sąlygas ir prognozes."
 
 #: ../plugins/weather/yahooutil.c:51 ../plugins/weather/openweathermap.c:56
 msgid "N"
-msgstr ""
+msgstr "Š"
 
 #: ../plugins/weather/yahooutil.c:52 ../plugins/weather/openweathermap.c:57
 msgid "NNE"
-msgstr ""
+msgstr "ŠŠR"
 
 #: ../plugins/weather/yahooutil.c:53 ../plugins/weather/openweathermap.c:58
 msgid "NE"
-msgstr ""
+msgstr "ŠR"
 
 #: ../plugins/weather/yahooutil.c:54 ../plugins/weather/openweathermap.c:59
 msgid "ENE"
-msgstr ""
+msgstr "RŠR"
 
 #: ../plugins/weather/yahooutil.c:55 ../plugins/weather/openweathermap.c:60
 msgid "E"
-msgstr ""
+msgstr "R"
 
 #: ../plugins/weather/yahooutil.c:56 ../plugins/weather/openweathermap.c:61
 msgid "ESE"
-msgstr ""
+msgstr "RPR"
 
 #: ../plugins/weather/yahooutil.c:57 ../plugins/weather/openweathermap.c:62
 msgid "SE"
-msgstr ""
+msgstr "PR"
 
 #: ../plugins/weather/yahooutil.c:58 ../plugins/weather/openweathermap.c:63
 msgid "SSE"
-msgstr ""
+msgstr "PPR"
 
 #: ../plugins/weather/yahooutil.c:59 ../plugins/weather/openweathermap.c:64
 msgid "S"
-msgstr ""
+msgstr "P"
 
 #: ../plugins/weather/yahooutil.c:60 ../plugins/weather/openweathermap.c:65
 msgid "SSW"
-msgstr ""
+msgstr "PPV"
 
 #: ../plugins/weather/yahooutil.c:61 ../plugins/weather/openweathermap.c:66
 msgid "SW"
-msgstr ""
+msgstr "PV"
 
 #: ../plugins/weather/yahooutil.c:62 ../plugins/weather/openweathermap.c:67
 msgid "WSW"
-msgstr ""
+msgstr "VPV"
 
 #: ../plugins/weather/yahooutil.c:63 ../plugins/weather/openweathermap.c:68
 msgid "W"
-msgstr ""
+msgstr "V"
 
 #: ../plugins/weather/yahooutil.c:64 ../plugins/weather/openweathermap.c:69
 msgid "WNW"
-msgstr ""
+msgstr "VŠV"
 
 #: ../plugins/weather/yahooutil.c:65 ../plugins/weather/openweathermap.c:70
 msgid "NW"
-msgstr ""
+msgstr "ŠV"
 
 #: ../plugins/weather/yahooutil.c:66 ../plugins/weather/openweathermap.c:71
 msgid "NNW"
-msgstr ""
+msgstr "ŠŠV"
 
 #: ../plugins/weather/yahooutil.c:1086
 msgid "Yahoo! Weather"
-msgstr ""
+msgstr "Yahoo! Orai"
 
 #: ../plugins/weather/openweathermap.c:365
 msgid "Mph"
-msgstr ""
+msgstr "Mph"
 
 #: ../plugins/weather/openweathermap.c:365
 msgid "m/s"
-msgstr ""
+msgstr "m/s"
 
 #: ../plugins/weather/openweathermap.c:535
 msgid "m"
-msgstr ""
+msgstr "m"
 
 #: ../plugins/weather/openweathermap.c:932
 msgid "OpenWeatherMap"
-msgstr ""
+msgstr "OpenWeatherMap"
 
 #~ msgid " --log <number> -- set log level 0-5. 0 - none 5 - chatty\n"
 #~ msgstr ""

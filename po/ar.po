@@ -176,6 +176,7 @@ msgid "Logout"
 msgstr "اخرج"
 
 #: ../src/main.c:323
+#, c-format
 #, c-format, fuzzy
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
 msgstr "لوحة‌لكسدي %s - لوحة جتك2+ خفيفة لأسطح مكتب يونكس\n"
@@ -1604,12 +1605,16 @@ msgstr ""
 
 #: ../plugins/batt/batt.c:189
 #, c-format
+#, fuzzy
 msgid ""
 "\n"
 "%sEnergy full:\t\t\t%5d mWh"
 msgstr ""
+"\n"
+"%sالشّحن الآن:\t\t\t%5d ميلي‌أمبير‌ساعة"
 
 #: ../plugins/batt/batt.c:191
+#, c-format
 #, c-format, fuzzy
 msgid ""
 "\n"
@@ -1635,6 +1640,7 @@ msgid ""
 msgstr ""
 
 #: ../plugins/batt/batt.c:198
+#, c-format
 #, c-format, fuzzy
 msgid ""
 "\n"
@@ -1653,6 +1659,7 @@ msgstr ""
 "%sالشّحن الآن:\t\t\t%5d ميلي‌أمبير‌ساعة"
 
 #: ../plugins/batt/batt.c:202
+#, c-format
 #, c-format, fuzzy
 msgid ""
 "\n"

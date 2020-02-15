@@ -180,6 +180,7 @@ msgid "Logout"
 msgstr "Çık"
 
 #: ../src/main.c:323
+#, c-format
 #, c-format, fuzzy
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
 msgstr "lxpanel %s - UNIX masaüstleri için hafif GTK2+ tablası\n"

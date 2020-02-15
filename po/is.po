@@ -175,6 +175,7 @@ msgid "Logout"
 msgstr "Skrá út"
 
 #: ../src/main.c:323
+#, c-format
 #, c-format, fuzzy
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
 msgstr "lxpanel %s - létt GTK2+ skjástika fyrir UNIX skjáborð\n"

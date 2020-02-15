@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: lxpanel 0.5.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-01 01:38+0200\n"
-"PO-Revision-Date: 2017-05-25 06:59+0000\n"
+"PO-Revision-Date: 2019-09-25 19:19+0000\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Generator: Pootle 2.8\n"
 "X-Pootle-Revision: 0\n"
 "X-Pootle-Path: /pl/lxpanel/po/pl.po\n"
-"X-POOTLE-MTIME: 1495695544.309291\n"
+"X-POOTLE-MTIME: 1569439140.532885\n"
 
 #: ../src/configurator.c:148
 msgid ""
@@ -110,7 +110,7 @@ msgstr "Ustawienia \"%s\""
 
 #: ../src/panel.c:1442
 msgid "Add / Remove Panel Items"
-msgstr "Zarządzaj apletami..."
+msgstr "Dodaj / Usuń elementy panelu"
 
 #: ../src/panel.c:1450
 #, c-format
@@ -185,9 +185,9 @@ msgid "Logout"
 msgstr "Wyloguj"
 
 #: ../src/main.c:323
-#, c-format, fuzzy
+#, c-format
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
-msgstr "lxpanel %s - lekki panel GTK2+ dla środowisk graficznych UNIX\n"
+msgstr "lxpanel %s - lekki panel GTK+ dla środowisk graficznych UNIX\n"
 
 #: ../src/main.c:324
 #, c-format
@@ -235,7 +235,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Proszę odwiedzić witrynę http://lxde.org/, aby poznać więcej szczegółów.\n"
+"Proszę odwiedzić witrynę http://lxde.org/ celem poznania więcej szczegółów.\n"
 "\n"
 
 #: ../src/input-button.c:147
@@ -352,7 +352,7 @@ msgstr "Wyłącz powiększanie dla małych ikon zadań"
 
 #: ../data/ui/launchtaskbar.glade.h:15
 msgid "Show task icons smaller than rest of panel icons"
-msgstr ""
+msgstr "Wyświetla ikony zadań jako mniejsze względem pozostałych ikon panelu"
 
 #: ../data/ui/launchtaskbar.glade.h:16
 msgid "Maximum width of task button"
@@ -471,7 +471,7 @@ msgstr "Pikseli"
 #: ../data/ui/panel-pref.glade.h:4
 #, no-c-format
 msgid "% Percent"
-msgstr "Procent"
+msgstr "Procent %"
 
 #: ../data/ui/panel-pref.glade.h:6
 msgid "Err"
@@ -535,7 +535,7 @@ msgstr "Styl systemowy"
 
 #: ../data/ui/panel-pref.glade.h:27
 msgid "Solid color (with opacity)"
-msgstr "Jednolity kolor"
+msgstr "Jednolity kolor (z nieprzezroczystością)"
 
 #: ../data/ui/panel-pref.glade.h:28 ../plugins/xkb/xkb-plugin.c:1455
 msgid "Image"
@@ -631,7 +631,7 @@ msgstr "Wyświetlanie obciążenia CPU"
 
 #: ../plugins/deskno/deskno.c:210 ../plugins/deskno/deskno.c:230
 msgid "Desktop Number / Workspace Name"
-msgstr "Numer i nazwa obszaru roboczego"
+msgstr "Numer pulpitu / Nazwa obszaru roboczego"
 
 #: ../plugins/deskno/deskno.c:212 ../plugins/dclock.c:439
 msgid "Bold font"
@@ -651,7 +651,7 @@ msgstr "Pasek aktywatorów programów"
 
 #: ../plugins/launchtaskbar.c:1834 ../plugins/launchtaskbar.c:2462
 msgid "Task Bar (Window List)"
-msgstr "Przyciski okien"
+msgstr "Pasek zadań (Lista okien)"
 
 #: ../plugins/launchtaskbar.c:1985
 msgid "A_dd to Launcher"
@@ -913,8 +913,7 @@ msgstr "Obsługa układów klawiatury"
 #: ../plugins/wincmd.c:207
 msgid "Left click to iconify all windows.  Middle click to shade them."
 msgstr ""
-"Minimalizuje wszystkie okna przy użyciu prawego klawisza myszy lub zwija "
-"przy użyciu środkowego klawisza."
+"Lewy klawisz myszy minimalizuje wszystkie okna.  Środkowy klawisz je zwija."
 
 #: ../plugins/wincmd.c:245 ../plugins/wincmd.c:255
 msgid "Minimize All Windows"
@@ -930,7 +929,7 @@ msgid ""
 "Supported commands are 1) iconify and 2) shade"
 msgstr ""
 "Wysyła polecenia do wszystkich okien obszaru roboczego.\n"
-"Obsługiwane polecenia: zminimalizuj wszystkie, zwiń wszystkie."
+"Obsługiwane polecenia: 1) zminimalizuj wszystkie, 2) zwiń wszystkie."
 
 #: ../plugins/dirmenu.c:213
 msgid "Open in _Terminal"
@@ -1009,7 +1008,6 @@ msgid "CPUFreq frontend"
 msgstr "Nakładka CPUFreq"
 
 #: ../plugins/cpufreq/cpufreq.c:402
-#, fuzzy
 msgid "Display CPU frequency and allow one to change governors and frequency"
 msgstr ""
 "Wyświetla częstotliwość CPU i umożliwia zmianę jego zarządcy oraz "
@@ -1514,11 +1512,11 @@ msgstr "Nie można otworzyć /proc/net/dev: %s"
 
 #: ../plugins/netstatus/netstatus-sysdeps.c:185
 msgid "Could not parse /proc/net/dev. No data."
-msgstr "Nie można przeanalizować /prov/net/dev. Brak danych."
+msgstr "Nie można przeanalizować /proc/net/dev. Brak danych."
 
 #: ../plugins/netstatus/netstatus-sysdeps.c:190
 msgid "Could not parse /proc/net/dev. Unknown format."
-msgstr "Nie można przeanalizować /prov/net/dev. Nieznany format."
+msgstr "Nie można przeanalizować /proc/net/dev. Nieznany format."
 
 #: ../plugins/netstatus/netstatus-sysdeps.c:205
 #: ../plugins/netstatus/netstatus-sysdeps.c:332
@@ -1538,11 +1536,11 @@ msgstr ""
 
 #: ../plugins/netstatus/netstatus-sysdeps.c:312
 msgid "Could not parse /proc/net/wireless. No data."
-msgstr "Nie można przeanalizować /prov/net/wireless. Brak danych."
+msgstr "Nie można przeanalizować /proc/net/wireless. Brak danych."
 
 #: ../plugins/netstatus/netstatus-sysdeps.c:316
 msgid "Could not parse /proc/net/wireless. Unknown format."
-msgstr "Nie można przeanalizować pliku /prov/net/wireless. Nieznany format."
+msgstr "Nie można przeanalizować pliku /proc/net/wireless. Nieznany format."
 
 #: ../plugins/netstatus/netstatus-sysdeps.c:343
 #, c-format
@@ -1748,7 +1746,7 @@ msgstr "Wyświetla wskaźnik stanu baterii używając ACPI"
 
 #: ../plugins/kbled/kbled.c:203 ../plugins/kbled/kbled.c:234
 msgid "Keyboard LED"
-msgstr "Diody klawiatury"
+msgstr "Diody LED klawiatury"
 
 #: ../plugins/kbled/kbled.c:205
 msgid "Show CapsLock"
@@ -1811,7 +1809,7 @@ msgstr "Obciążenie CPU: %.2f%%"
 #: ../plugins/monitors/monitors.c:386
 #, c-format
 msgid "RAM usage: %.1fMB (%.2f%%)"
-msgstr "Użycie pamięci: %.1fMB (%.2f%%)"
+msgstr "Użycie pamięci RAM: %.1fMB (%.2f%%)"
 
 #: ../plugins/monitors/monitors.c:732 ../plugins/monitors/monitors.c:821
 msgid "Resource monitors"
@@ -1823,11 +1821,11 @@ msgstr "Kolor CPU"
 
 #: ../plugins/monitors/monitors.c:736
 msgid "Display RAM usage"
-msgstr "Wyświetlanie użycia pamięci"
+msgstr "Wyświetlanie użycia pamięci RAM"
 
 #: ../plugins/monitors/monitors.c:737
 msgid "RAM color"
-msgstr "Kolor pamięci operacyjnej"
+msgstr "Kolor pamięci RAM"
 
 #: ../plugins/monitors/monitors.c:738
 msgid "Action when clicked (default: lxtask)"
@@ -1835,11 +1833,11 @@ msgstr "Działanie wykonywane po kliknięciu (domyślnie: lxtask)"
 
 #: ../plugins/monitors/monitors.c:822
 msgid "Display monitors (CPU, RAM)"
-msgstr "Wyświetl monitory (procesor, pamięć)"
+msgstr "Wyświetla monitory (procesor CPU, pamięć RAM)"
 
 #: ../plugins/weather/weatherwidget.c:52
 msgid "[N/A]"
-msgstr "n/d"
+msgstr "[n/d]"
 
 #: ../plugins/weather/weatherwidget.c:806
 msgid "Enter New Location"
@@ -2046,87 +2044,87 @@ msgstr "Wyświetla warunki pogodowe dla danej lokalizacji."
 
 #: ../plugins/weather/yahooutil.c:51 ../plugins/weather/openweathermap.c:56
 msgid "N"
-msgstr ""
+msgstr "Pn"
 
 #: ../plugins/weather/yahooutil.c:52 ../plugins/weather/openweathermap.c:57
 msgid "NNE"
-msgstr ""
+msgstr "PnPnWsch"
 
 #: ../plugins/weather/yahooutil.c:53 ../plugins/weather/openweathermap.c:58
 msgid "NE"
-msgstr ""
+msgstr "PnWsch"
 
 #: ../plugins/weather/yahooutil.c:54 ../plugins/weather/openweathermap.c:59
 msgid "ENE"
-msgstr ""
+msgstr "WschPnWsch"
 
 #: ../plugins/weather/yahooutil.c:55 ../plugins/weather/openweathermap.c:60
 msgid "E"
-msgstr ""
+msgstr "Wsch"
 
 #: ../plugins/weather/yahooutil.c:56 ../plugins/weather/openweathermap.c:61
 msgid "ESE"
-msgstr ""
+msgstr "WschPdWsch"
 
 #: ../plugins/weather/yahooutil.c:57 ../plugins/weather/openweathermap.c:62
 msgid "SE"
-msgstr ""
+msgstr "PdWsch"
 
 #: ../plugins/weather/yahooutil.c:58 ../plugins/weather/openweathermap.c:63
 msgid "SSE"
-msgstr ""
+msgstr "PdPdWsch"
 
 #: ../plugins/weather/yahooutil.c:59 ../plugins/weather/openweathermap.c:64
 msgid "S"
-msgstr ""
+msgstr "Pd"
 
 #: ../plugins/weather/yahooutil.c:60 ../plugins/weather/openweathermap.c:65
 msgid "SSW"
-msgstr ""
+msgstr "PdPdZach"
 
 #: ../plugins/weather/yahooutil.c:61 ../plugins/weather/openweathermap.c:66
 msgid "SW"
-msgstr ""
+msgstr "PdZach"
 
 #: ../plugins/weather/yahooutil.c:62 ../plugins/weather/openweathermap.c:67
 msgid "WSW"
-msgstr ""
+msgstr "ZachPdZach"
 
 #: ../plugins/weather/yahooutil.c:63 ../plugins/weather/openweathermap.c:68
 msgid "W"
-msgstr ""
+msgstr "Zach"
 
 #: ../plugins/weather/yahooutil.c:64 ../plugins/weather/openweathermap.c:69
 msgid "WNW"
-msgstr ""
+msgstr "ZachPnZach"
 
 #: ../plugins/weather/yahooutil.c:65 ../plugins/weather/openweathermap.c:70
 msgid "NW"
-msgstr ""
+msgstr "PnZach"
 
 #: ../plugins/weather/yahooutil.c:66 ../plugins/weather/openweathermap.c:71
 msgid "NNW"
-msgstr ""
+msgstr "PnPnZach"
 
 #: ../plugins/weather/yahooutil.c:1086
 msgid "Yahoo! Weather"
-msgstr ""
+msgstr "Pogoda Yahoo!"
 
 #: ../plugins/weather/openweathermap.c:365
 msgid "Mph"
-msgstr ""
+msgstr "Mph"
 
 #: ../plugins/weather/openweathermap.c:365
 msgid "m/s"
-msgstr ""
+msgstr "m/s"
 
 #: ../plugins/weather/openweathermap.c:535
 msgid "m"
-msgstr ""
+msgstr "m"
 
 #: ../plugins/weather/openweathermap.c:932
 msgid "OpenWeatherMap"
-msgstr ""
+msgstr "OpenWeatherMap"
 
 #~ msgid " --log <number> -- set log level 0-5. 0 - none 5 - chatty\n"
 #~ msgstr ""

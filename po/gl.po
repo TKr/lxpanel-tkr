@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-01 01:38+0200\n"
-"PO-Revision-Date: 2019-02-22 09:49+0000\n"
+"PO-Revision-Date: 2019-09-29 07:48+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "Language: \n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.8\n"
 "X-Pootle-Revision: 0\n"
 "X-Pootle-Path: /gl/lxpanel/po/gl.po\n"
-"X-POOTLE-MTIME: 1550828951.650595\n"
+"X-POOTLE-MTIME: 1569743291.958287\n"
 
 #: ../src/configurator.c:148
 msgid ""
@@ -178,9 +178,9 @@ msgid "Logout"
 msgstr "Saír"
 
 #: ../src/main.c:323
-#, c-format, fuzzy
+#, c-format
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
-msgstr "lxpanel %s - panel lixeiro GTK2+ para escritorios UNIX\n"
+msgstr "lxpanel %s - panel lixeiro GTK+ para escritorios UNIX\n"
 
 #: ../src/main.c:324
 #, c-format
@@ -292,7 +292,7 @@ msgstr "Asignar espazo"
 
 #: ../data/ui/launchtaskbar.glade.h:1 ../plugins/launchtaskbar.c:2482
 msgid "Application Launch and Task Bar"
-msgstr "Barra de tarefas e iniciador de aplicativos"
+msgstr "Barra de tarefas e lanzador de aplicacións"
 
 #. Launchtaskbar mode: launchbar, taskbar, or combined
 #: ../data/ui/launchtaskbar.glade.h:3
@@ -301,11 +301,11 @@ msgstr "<b>Modo:</b>"
 
 #: ../data/ui/launchtaskbar.glade.h:4
 msgid "Launchers"
-msgstr "Iniciadores"
+msgstr "Lanzadores"
 
 #: ../data/ui/launchtaskbar.glade.h:5
 msgid "<b>Launchbar</b>"
-msgstr "<b>Barra de iniciadores</b>"
+msgstr "<b>Barra de lanzadores</b>"
 
 #: ../data/ui/launchtaskbar.glade.h:6
 msgid "Show tooltips"
@@ -337,7 +337,7 @@ msgstr "Avisar cando unha xanela require atención"
 
 #: ../data/ui/launchtaskbar.glade.h:13
 msgid "Combine multiple application windows into a single button"
-msgstr "Combinar múltiples xanelas de aplicativos nun só botón"
+msgstr "Combinar múltiples xanelas de aplicacións nun só botón"
 
 #: ../data/ui/launchtaskbar.glade.h:14
 msgid "Disable enlargement for small task icons"
@@ -362,7 +362,7 @@ msgstr "<b>Barra de tarefas</b>"
 
 #: ../data/ui/launchtaskbar.glade.h:19
 msgid "Only Application Launch Bar"
-msgstr "Só a barra de iniciadores de aplicativos"
+msgstr "Só a barra de lanzadores de aplicacións"
 
 #: ../data/ui/launchtaskbar.glade.h:20
 msgid "Only Task Bar (Window List)"
@@ -370,7 +370,7 @@ msgstr "Só a barra de tarefas (lista de xanelas)"
 
 #: ../data/ui/launchtaskbar.glade.h:21
 msgid "Integrated Application Launch Bar and Task Bar"
-msgstr "Barras de iniciadores de aplicativos e tarefas integradas"
+msgstr "Barras de lanzadores de aplicacións e tarefas integradas"
 
 #: ../data/ui/netstatus.glade.h:1
 msgid "<b>Connection</b>"
@@ -557,7 +557,7 @@ msgstr "Aparencia"
 
 #: ../data/ui/panel-pref.glade.h:35
 msgid "Panel Applets"
-msgstr "Miniaplicativos do panel"
+msgstr "Miniaplicacións do panel"
 
 #: ../data/ui/panel-pref.glade.h:36
 msgid "Logout Command:"
@@ -573,7 +573,7 @@ msgstr "Xestor de ficheiros:"
 
 #: ../data/ui/panel-pref.glade.h:39
 msgid "<b>Set Preferred Applications</b>"
-msgstr "<b>Configurar os aplicativos preferidos</b>"
+msgstr "<b>Configurar as aplicacións preferidas</b>"
 
 #: ../data/ui/panel-pref.glade.h:40
 msgid "Make window managers treat the panel as dock"
@@ -641,7 +641,7 @@ msgstr "Amosa o número da área de traballo, por cmeury@users.sf.net"
 
 #: ../plugins/launchtaskbar.c:1831 ../plugins/launchtaskbar.c:2452
 msgid "Application Launch Bar"
-msgstr "Barra de aplicativos"
+msgstr "Barra de aplicacións"
 
 #: ../plugins/launchtaskbar.c:1834 ../plugins/launchtaskbar.c:2462
 msgid "Task Bar (Window List)"
@@ -649,11 +649,11 @@ msgstr "Barra de tarefas (lista de xanelas)"
 
 #: ../plugins/launchtaskbar.c:1985
 msgid "A_dd to Launcher"
-msgstr "E_ngadir ao iniciador"
+msgstr "E_ngadir ao lanzador"
 
 #: ../plugins/launchtaskbar.c:1987
 msgid "Rem_ove from Launcher"
-msgstr "Re_tirar do iniciador"
+msgstr "Re_tirar do lanzador"
 
 #: ../plugins/launchtaskbar.c:1989
 msgid "_New Instance"
@@ -661,21 +661,20 @@ msgstr "Instancia _nova"
 
 #: ../plugins/launchtaskbar.c:2453
 msgid "Bar with buttons to launch application"
-msgstr "Barra de aceso a aplicativos"
+msgstr "Barra de aceso a aplicacións"
 
 #: ../plugins/launchtaskbar.c:2463
-#, fuzzy
 msgid ""
 "Taskbar shows all opened windows and allows to iconify them, shade or get "
 "focus"
 msgstr ""
 "A barra de tarefas amosa todas as xanelas abertas e permite minimizalas, "
-"repregalas ou enfocalas"
+"escurecelas ou enfocalas"
 
 #: ../plugins/launchtaskbar.c:2483
 msgid "Bar with buttons to launch application and/or show all opened windows"
 msgstr ""
-"Barra con botóns para iniciar aplicativos e/ou amosar todas as xanelas "
+"Barra con botóns para iniciar aplicacións e/ou amosar todas as xanelas "
 "abertas"
 
 #. Add Raise menu item.
@@ -778,7 +777,7 @@ msgstr "Icona"
 
 #: ../plugins/menu.c:998
 msgid "Application Menu"
-msgstr "Menú de aplicativos"
+msgstr "Menú de aplicacións"
 
 #: ../plugins/separator.c:73
 msgid "Separator"
@@ -1002,10 +1001,9 @@ msgid "CPUFreq frontend"
 msgstr "Interface de CPUFreq"
 
 #: ../plugins/cpufreq/cpufreq.c:402
-#, fuzzy
 msgid "Display CPU frequency and allow one to change governors and frequency"
 msgstr ""
-"Amosa a frecuencia da CPU e permite cambiar os gobernadores e a frecuencia"
+"Amosa a frecuencia da CPU e permite cambiar os reguladores e a frecuencia"
 
 #: ../plugins/volumealsa/volumealsa.c:245
 msgid "ALSA (or pulseaudio) had a problem. Please check the lxpanel logs."
@@ -1023,8 +1021,8 @@ msgid ""
 "Error, you need to install an application to configure the sound "
 "(pavucontrol, alsamixer ...)"
 msgstr ""
-"Erro, é necesario instalar un aplicativo para configurar o son (pavucontol, "
-"alsamixer ...)"
+"Erro, é necesario instalar unha aplicación para configurar o son ("
+"pavucontol, alsamixer ...)"
 
 #. Create a frame as the child of the viewport.
 #: ../plugins/volumealsa/volumealsa.c:895
@@ -1119,7 +1117,7 @@ msgstr "Orde para abrir o mesturador"
 
 #: ../plugins/volumealsa/volumealsa.c:1542
 msgid "Launch Mixer"
-msgstr "Iniciador do mesturador"
+msgstr "Lanzador do mesturador"
 
 #: ../plugins/volumealsa/volumealsa.c:1554
 #: ../plugins/volumealsa/volumealsa.c:1575
@@ -1762,11 +1760,11 @@ msgstr "Sen indicadores"
 
 #: ../plugins/indicator/indicator.c:863 ../plugins/indicator/indicator.c:881
 msgid "Indicator applets"
-msgstr "Indicador de miniaplicativos"
+msgstr "Indicador de miniaplicacións"
 
 #: ../plugins/indicator/indicator.c:865
 msgid "Indicator Applications"
-msgstr "Indicador de aplicativos"
+msgstr "Indicador de aplicacións"
 
 #: ../plugins/indicator/indicator.c:866
 msgid "Clock Indicator"
@@ -1790,7 +1788,7 @@ msgstr "Menú de son"
 
 #: ../plugins/indicator/indicator.c:882
 msgid "Add indicator applets to the panel"
-msgstr "Engadir un indicador de miniaplicativos ao panel"
+msgstr "Engadir un indicador de miniaplicacións ao panel"
 
 #: ../plugins/monitors/monitors.c:285
 #, c-format

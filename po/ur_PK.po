@@ -180,6 +180,7 @@ msgid "Logout"
 msgstr "لاگ آؤٹ"
 
 #: ../src/main.c:323
+#, c-format
 #, c-format, fuzzy
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
 msgstr "ایل ایکس پینل %s - ہلکا پھلکا GTK2+ پینل برائے یونکس ڈیسک ٹاپ\n"

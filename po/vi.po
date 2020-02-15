@@ -171,6 +171,7 @@ msgid "Logout"
 msgstr "Đăng xuất"
 
 #: ../src/main.c:323
+#, c-format
 #, c-format, fuzzy
 msgid "lxpanel %s - lightweight GTK+ panel for UNIX desktops\n"
 msgstr "lxpanel %s - bảng điều khiển GTK2+ gọn nhẹ cho màn hình nền UNIX\n"

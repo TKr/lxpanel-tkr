@@ -682,6 +682,7 @@ msgid "Ico_nify"
 msgstr ""
 
 #: ../plugins/task-button.c:388
+#, c-format
 #, c-format, fuzzy
 msgid "Workspace _%d"
 msgstr "Darba laukums%d"
