@@ -16,6 +16,7 @@
  *               2014-2016 Andriy Grytsenko <andrej@rep.kiev.ua>
  *               2015 Rafał Mużyło <galtgendo@gmail.com>
  *               2015 Hanno Zulla <hhz@users.sf.net>
+ *               2018 Mamoru TASAKA <mtasaka@fedoraproject.org>
  *
  * This file is a part of LXPanel project.
  *
@@ -771,7 +772,7 @@ static void paint_root_pixmap(LXPanel *panel, cairo_t *cr)
 #endif
 }
 
-void _panel_determine_background_pixmap(LXPanel * panel)
+static void _panel_determine_background_pixmap(LXPanel * panel)
 {
 #if GTK_CHECK_VERSION(3, 0, 0)
     cairo_pattern_t *pattern;
@@ -1374,7 +1375,7 @@ static void panel_popupmenu_about( GtkMenuItem* item, Panel* panel )
                                     gdk_pixbuf_new_from_file(PACKAGE_DATA_DIR "/images/my-computer.png", NULL));
     }
 
-    gtk_about_dialog_set_copyright(GTK_ABOUT_DIALOG(about), _("Copyright (C) 2008-2016"));
+    gtk_about_dialog_set_copyright(GTK_ABOUT_DIALOG(about), _("Copyright (C) 2008-2019"));
     gtk_about_dialog_set_comments(GTK_ABOUT_DIALOG(about), _( "Desktop panel for LXDE project"));
     gtk_about_dialog_set_license(GTK_ABOUT_DIALOG(about), "This program is free software; you can redistribute it and/or\nmodify it under the terms of the GNU General Public License\nas published by the Free Software Foundation; either version 2\nof the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program; if not, write to the Free Software\nFoundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.");
     gtk_about_dialog_set_website(GTK_ABOUT_DIALOG(about), "http://lxde.org/");
@@ -1687,11 +1688,13 @@ panel_start_gui(LXPanel *panel, config_setting_t *list)
     p->initialized = TRUE;
 
     if (list) for (i = 1; (s = config_setting_get_elem(list, i)) != NULL; )
+    {
         if (strcmp(config_setting_get_name(s), "Plugin") == 0 &&
             panel_parse_plugin(panel, s)) /* success on plugin start */
             i++;
         else /* remove invalid data from config */
             config_setting_remove_elem(list, i);
+    }
 
     RET();
 }
@@ -1720,9 +1723,10 @@ void panel_adjust_geometry_terminology(Panel * p)
 }
 
 /* Draw text into a label, with the user preference color and optionally bold. */
-void panel_draw_label_text(Panel * p, GtkWidget * label, const char * text,
+static
+void panel_draw_label_text_with_color(Panel * p, GtkWidget * label, const char * text,
                            gboolean bold, float custom_size_factor,
-                           gboolean custom_color)
+                           gboolean custom_color, GdkColor *gdkcolor)
 {
     if (text == NULL)
     {
@@ -1758,12 +1762,13 @@ void panel_draw_label_text(Panel * p, GtkWidget * label, const char * text,
     }
 
     gchar * formatted_text;
-    if ((custom_color) && (p->usefontcolor))
+    if (gdkcolor || ((custom_color) && (p->usefontcolor)))
     {
         /* Color, optionally bold. */
+        guint32 rgb24 = gdkcolor ? gcolor2rgb24(gdkcolor) : gcolor2rgb24(&p->gfontcolor);
         formatted_text = g_strdup_printf("<span font_desc=\"%d\" color=\"#%06x\">%s%s%s</span>",
                 font_desc,
-                gcolor2rgb24(&p->gfontcolor),
+                rgb24,
                 ((bold) ? "<b>" : ""),
                 valid_markup,
                 ((bold) ? "</b>" : ""));
@@ -1783,11 +1788,25 @@ void panel_draw_label_text(Panel * p, GtkWidget * label, const char * text,
     g_free(escaped_text);
 }
 
+void panel_draw_label_text(Panel * p, GtkWidget * label, const char * text,
+                           gboolean bold, float custom_size_factor,
+                           gboolean custom_color)
+{
+    panel_draw_label_text_with_color(p, label, text, bold, custom_size_factor, custom_color, NULL);
+}
+
 void lxpanel_draw_label_text(LXPanel * p, GtkWidget * label, const char * text,
                            gboolean bold, float custom_size_factor,
                            gboolean custom_color)
 {
     panel_draw_label_text(p->priv, label, text, bold, custom_size_factor, custom_color);
+}
+
+void lxpanel_draw_label_text_with_color(LXPanel * p, GtkWidget * label, const char * text,
+                                    gboolean bold, float custom_size_factor,
+                                    GdkColor *color)
+{
+    panel_draw_label_text_with_color(p->priv, label, text, bold, custom_size_factor, FALSE, color);
 }
 
 void panel_set_panel_configuration_changed(Panel *p)

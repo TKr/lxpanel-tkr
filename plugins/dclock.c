@@ -9,6 +9,7 @@
  *               2012-2014 Henry Gebhardt <hsggebhardt@gmail.com>
  *               2012 Piotr Sipika <Piotr.Sipika@gmail.com>
  *               2014-2016 Andriy Grytsenko <andrej@rep.kiev.ua>
+ *               2018 Mamoru TASAKA <mtasaka@fedoraproject.org>
  *
  * This file is a part of LXPanel project.
  *
@@ -74,6 +75,7 @@ typedef struct {
 static gboolean dclock_update_display(DClockPlugin * dc);
 static void dclock_destructor(gpointer user_data);
 static gboolean dclock_apply_configuration(gpointer user_data);
+static void dclock_on_panel_reconfigured(LXPanel *panel, GtkWidget *p);
 
 /* Display a window containing the standard calendar widget. */
 static GtkWidget * dclock_create_calendar(DClockPlugin * dc)
@@ -440,6 +442,12 @@ static GtkWidget *dclock_configure(LXPanel *panel, GtkWidget *p)
         NULL);
 }
 
+/* Callback when panel configuration changes. */
+static void dclock_on_panel_reconfigured(LXPanel *panel, GtkWidget *p)
+{
+    dclock_apply_configuration(p);
+}
+
 /* Plugin descriptor. */
 LXPanelPluginInit lxpanel_static_plugin_dclock = {
     .name = N_("Digital Clock"),
@@ -447,5 +455,6 @@ LXPanelPluginInit lxpanel_static_plugin_dclock = {
 
     .new_instance = dclock_constructor,
     .config = dclock_configure,
+    .reconfigure = dclock_on_panel_reconfigured,
     .button_press_event = dclock_button_press_event
 };

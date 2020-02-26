@@ -1,3 +1,28 @@
+0.10.1
+-------------------------------------------------------------------------
+* Fixed battery alarm when measurement of current is missing.
+* Fixed spelling errors on "allow to" in plugins descriptions, and "GTK2+" to
+    more correct "GTK+".
+
+0.10.0
+-------------------------------------------------------------------------
+* Fixed delayed application of font cnahges on dclock and weather plugins.
+* Allowed switching workplaces by scrolling over the pager.
+* Added new API: lxpanel_draw_label_text_with_color().
+* Fixed not-applicable font setting on thermal plugin.
+* Fixed crash on right-click task button after some task was killed using menu
+    on another task button.
+* Fixed crash after color was removed from monitor plugin configuration.
+* Aligned used memory calculation in lxpanel monitor with 'free' command line
+    utility.
+* Added possibility to use few weather providers for weather widget.
+* Disabled Yahoo! Weather because they removed free API support.
+* Added OpenWeatherMap weather provider.
+* Fixed wrong application position on taskbar in multihead configuration.
+* Fixed battery color (must be green) when battery is fully charged.
+* Fixed crash at task plugin when all windows lose focus.
+* Disambiguated keyboard layout names to follow variants.
+
 0.9.3
 -------------------------------------------------------------------------
 * Finally fixed battery calculations, it missed Power so left time was

@@ -1,5 +1,5 @@
 AC_PREREQ(2.53)
-AC_INIT(lxpanel, 0.9.3, http://lxde.org/)
+AC_INIT(lxpanel, 0.10.0, http://lxde.org/)
 AM_INIT_AUTOMAKE([-Wall foreign subdir-objects no-dist-gzip dist-xz])
 AC_CONFIG_HEADER([config.h])
 AC_CONFIG_MACRO_DIR([m4])
@@ -270,9 +270,21 @@ if test x"$compile_alsa" = "xno"; then
     fi
 else
     dnl use $plugin_volumealsa for backward compatibility
-    if test -n $plugin_volumealsa; then
+    if test -n "$plugin_volumealsa"; then
         plugin_volume=volume.la
     fi
+fi
+
+if test -n "$plugin_weather"; then
+    AC_MSG_CHECKING([for CURL development files])
+    curl-config --help &>/dev/null || {
+        AC_MSG_ERROR([weather plugin requires libcurl development files])
+    }
+    CURL_CFLAGS=$(curl-config --cflags)
+    CURL_LIBS=$(curl-config --libs)
+    AC_MSG_RESULT([found])
+    AC_SUBST(CURL_CFLAGS)
+    AC_SUBST(CURL_LIBS)
 fi
 
 dnl Exclude indicator support when there is no support.

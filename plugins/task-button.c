@@ -10,10 +10,11 @@
  *               2012 Piotr Sipika <Piotr.Sipika@gmail.com>
  *               2013 Vincenzo di Cicco <enzodicicco@gmail.com>
  *               2013 Rouslan <rouslan-k@users.sourceforge.net>
- *               2014-2016 Andriy Grytsenko <andrej@rep.kiev.ua>
+ *               2014-2019 Andriy Grytsenko <andrej@rep.kiev.ua>
  *               2014 Andy Balaam <axis3x3@users.sf.net>
  *               2015 Balló György <ballogyor@gmail.com>
  *               2015 Rafał Mużyło <galtgendo@gmail.com>
+ *               2018 Mamoru TASAKA <mtasaka@fedoraproject.org>
  *
  * This file is a part of LXPanel project.
  *
@@ -916,8 +917,8 @@ static GdkPixbuf * get_wm_icon(Window task_win, guint required_width,
                     NULL);
                 possible_source = a_NET_WM_ICON;
             }
-        else
-            result = -1;
+            else
+                result = -1;
 
             /* Free the X property data. */
             XFree(data);
@@ -1213,8 +1214,8 @@ static gboolean task_update_visibility(TaskButton *task)
         /* task button became visible */
         gtk_widget_show(GTK_WIDGET(task));
     return (task->n_visible != old_n_visible || /* n_visible changed */
-            !task->visible == old_visible || /* visible changed */
-            !task->same_name == old_same_name || /* visible name changed */
+            (!task->visible) == old_visible || /* visible changed */
+            (!task->same_name) == old_same_name || /* visible name changed */
             (task->same_name && !old_last_focused)); /* visible name unavailable */
 }
 
@@ -1538,7 +1539,17 @@ void task_button_update_windows_list(TaskButton *button, Window *list, gint n)
         l = next; /* go next details */
     }
     if (button->details == NULL) /* all windows were deleted */
+    {
+        GList *menu_list = gtk_menu_get_for_attach_widget(GTK_WIDGET(button));
+        menu_list = g_list_copy(menu_list);
+        for (l = menu_list; l; l = l->next)
+        {
+            GtkMenu *menu = GTK_MENU(l->data);
+            gtk_menu_detach(menu);
+        }
+        g_list_free(menu_list);
         gtk_widget_destroy(GTK_WIDGET(button));
+    }
     else if (has_removed && task_update_visibility(button))
         task_redraw_label(button);
     // FIXME: test if need to update menu
@@ -1665,7 +1676,7 @@ gboolean task_button_window_focus_changed(TaskButton *button, Window *win)
     for (l = button->details; l; l = l->next)
     {
         details = l->data;
-        if (details->win == *win)
+        if (win && details->win == *win)
         {
             res = TRUE;
             details->focused = TRUE;
@@ -1709,6 +1720,7 @@ gboolean task_button_window_reconfigured(TaskButton *button, Window win)
        monitor than before, redraw the task button */
     old_mon = details->monitor;
     new_mon = get_window_monitor(details->win);
+    details->monitor = new_mon;
 
     if (button->flags.same_monitor_only
         && (old_mon == button->monitor || new_mon == button->monitor))
@@ -1718,7 +1730,6 @@ gboolean task_button_window_reconfigured(TaskButton *button, Window win)
         task_redraw_label(button);
         // FIXME: test if need to update menu
     }
-    details->monitor = new_mon;
     return TRUE;
 }
 
